@@ -108,9 +108,9 @@ def muuda_kontakt():
 
 def kustuta_kontakt():
     kontaktid=loe_failist()
-    nimi=entry_nimi.get().strip()
-    telefon=entry_telefon.get().strip()
-    email=entry_email.get().strip()
+    nimi=entry_nimi.get()
+    telefon=entry_telefon.get()
+    email=entry_email.get()
 
     if nimi == "" and telefon == "" and email == "":
         messagebox.showwarning("Hoiatus", "Palun sisesta vähemalt üks väli (nimi, telefon või email)!")
